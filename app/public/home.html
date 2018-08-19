@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="page-header">
+        <h1>Survey Questions
+            <small>Be Honest with your answers for best results</small>
+        </h1>
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label for="name" class="h3">Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="" placeholder="Enter Name">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="form-group">
+            <label for="photo" class="h3">Link to Photo Image</label>
+            <input type="text" class="form-control" id="photo" placeholder="Photo Link">
+        </div>
+        <!-- <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+        <div class="form-group">
+            <label for="q1" class="h3">Question 1</label>
+            <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+            <select class="form-control" id="q1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q2" class="h3">Question 2</label>
+            <h5>Generally speaking, you rely more on your experience than your imagination.</h5>
+            <select class="form-control" id="q2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q3" class="h3">Question 3</label>
+            <h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+            <select class="form-control" id="q3">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q4" class="h3">Question 4</label>
+            <h5>You rarely do something just out of sheer curiosity.</h5>
+            <select class="form-control" id="q4">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q5" class="h3">Question 5</label>
+            <h5>People can rarely upset you.</h5>
+            <select class="form-control" id="q5">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q6" class="h3">Question 6</label>
+            <h5>It is often difficult for you to relate to other people’s feelings.</h5>
+            <select class="form-control" id="q6">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q7" class="h3">Question 7</label>
+            <h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
+            <select class="form-control" id="q7">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q8" class="h3">Question 8</label>
+            <h5>You rarely get carried away by fantasies and ideas.</h5>
+            <select class="form-control" id="q8">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q9" class="h3">Question 9</label>
+            <h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+            <select class="form-control" id="q9">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q10" class="h3">Question 10</label>
+            <h5>You feel more energetic after spending time with a group of people.</h5>
+            <select class="form-control" id="q10">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary submit">Submit</button>
+    </form>
+
+    <!-- <div class="posTester"> lkjhlkjhlkjh lkjhlkj hlkj hlkjh lkjhlkjhlkjh kjhlk j</div> -->
+
+    <!-- <h2>Modal Example</h2> -->
+
+    <!-- Trigger/Open The Modal -->
+    <!-- <button id="myBtn">Open Modal</button> -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>She is your perfect match...</p>
+            <div id="sometext"></div>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+
+        // $(".posTester").text("HELLO LADY");
+
+        $(".submit").on("click", function (event) {
+            event.preventDefault();
+
+            console.log("ON SUBMITTTTTTTTTTTT !@#$");
+
+            console.log("Peace!");
+
+            var pname = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                q1: $("#q1").val().trim(),
+                q2: $("#q2").val().trim(),
+                q3: $("#q3").val().trim(),
+                q4: $("#q4").val().trim(),
+                q5: $("#q5").val().trim(),
+                q6: $("#q6").val().trim(),
+                q7: $("#q7").val().trim(),
+                q8: $("#q8").val().trim(),
+                q9: $("#q9").val().trim(),
+                q10: $("#q10").val().trim()
+            };
+            // var pname = {name:"Hi"};
+
+            var currentURL = window.location.origin;
+            $.post("/api/hello", pname)
+                .then(function (theData) {
+
+                    // $(".posTester").text(theData.Name);
+                    // $(".posTester").append('<image src="' + theData.Photo + '"' + "</image>");
+                    console.log("Peace inside ajax call.");
+                    console.log(theData);
+
+                    // $(document).ready(function () {
+                    //     // $("button").click(function () {
+                    //     //     $("p").text("Hello world!");
+                    //     // });
+
+                    //     $(".posTester").text("HELLO LADY");
+                    // });
+
+                    // $(".posTester").text("HELLO LADY");
+
+                    // Here we are logging the URL so we have access to it for troubleshooting
+                    //   console.log("------------------------------------");
+                    //   console.log("URL: " + currentURL + "/api/tables");
+                    //   console.log("------------------------------------");
+
+                    // Here we then log the NYTData to console, where it will show up as an object.
+                    //   console.log(tableData);
+                    //   console.log("------------------------------------");
+
+                    // Loop through and display each of the customers
+                    //   for (var i = 0; i < tableData.length; i++) {
+
+                    //   // Create the HTML Well (Section) and Add the table content for each reserved table
+                    //     var tableSection = $("<div>");
+                    //     tableSection.addClass("well");
+                    //     tableSection.attr("id", "tableWell-" + i + 1);
+                    //     $("#tableSection").append(tableSection);
+
+                    //     var tableNumber = i + 1;
+
+
+                    //     // Then display the remaining fields in the HTML (Section Name, Date, URL)
+                    //     $("#tableWell-" + i + 1).append("<h2><span class='label label-primary'>" + tableNumber + "</span> | " + tableData[i].customerID + "</h2>");
+                    //   }
+
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+
+                    // Get the button that opens the modal
+                    // var btn = document.getElementById("myBtn");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks the button, open the modal 
+                    // btn.onclick = function () {
+                        modal.style.display = "block";
+                        $("#sometext").append('<div>' + theData.Name + '</div>');
+                        $("#sometext").append('<image src="' + theData.Photo + '"></image>');
+                    // }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                });
+
+            // Here we grab the form elements
+            //   var newReservation = {
+            //     customerName: $("#reserve-name").val().trim(),
+            //     phoneNumber: $("#reserve-phone").val().trim(),
+            //     customerEmail: $("#reserve-email").val().trim(),
+            //     customerID: $("#reserve-unique-id").val().trim()
+            //   };
+
+            //   console.log(newReservation);
+
+            // This line is the magic. It"s very similar to the standard ajax function we used.
+            // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+            // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+            // depending on if a tables is available or not.
+
+            //   $.post("/api/tables", newReservation,
+            //     function(data) {
+
+            //       // If a table is available... tell user they are booked.
+            //       if (data) {
+            //         alert("Yay! You are officially booked!");
+            //       }
+
+            //       // If a table is available... tell user they on the waiting list.
+            //       else {
+            //         alert("Sorry you are on the wait list");
+            //       }
+
+            //       // Clear the form when submitting
+            //       $("#reserve-name").val("");
+            //       $("#reserve-phone").val("");
+            //       $("#reserve-email").val("");
+            //       $("#reserve-unique-id").val("");
+
+            //     });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
